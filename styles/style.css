@@ -86,7 +86,7 @@ ol {
 .result__video {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 /*Форма поиска и кнопки*/
@@ -163,7 +163,7 @@ ol {
 .button {
   text-align: center;
   border: 1px solid #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 700;
   font-size: 18px;
   background-color: transparent;
@@ -190,7 +190,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -207,7 +207,7 @@ ol {
   flex-direction: column;
   gap:30px;
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__list {
@@ -224,7 +224,7 @@ ol {
 .content__video-card-thumbnail {
   min-width: 194px;
   height: 109px;
-  object-fit:contain;
+  object-fit:cover;
   object-position:right;
   
 }
