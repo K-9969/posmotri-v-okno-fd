@@ -97,10 +97,13 @@ ol {
 
 .search-form__fieldset {
   border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
@@ -123,7 +126,7 @@ ol {
   border-right: none;
   border-left: none;
   width: 225px;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
   font-size: 18px;
   background-color: transparent;
@@ -178,13 +181,14 @@ ol {
 
 .more-button {
   width: 100%;
+  padding: 5px;
 }
 
 /*Блок списка контента*/
 .content__details {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 399px;
   height: 100%;
   gap: 26px;
 }
@@ -207,7 +211,9 @@ ol {
   flex-direction: column;
   gap:30px;
   height: 298px;
+  padding: 2.5px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .content__list {
@@ -231,6 +237,7 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  min-width: 0
 }
 
 .content__card-link {
@@ -240,7 +247,8 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  width: 100%;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
@@ -254,7 +262,7 @@ ol {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
@@ -262,10 +270,6 @@ ol {
 
 .content__card-link_current {
   background-color: rgba(84, 80, 80, 1);
-}
-
-.content__list-item {
-  padding: 3px;
 }
 
 /*Стили состояний*/
